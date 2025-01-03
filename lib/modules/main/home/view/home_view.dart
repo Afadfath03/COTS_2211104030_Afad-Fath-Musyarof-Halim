@@ -31,7 +31,6 @@ class HomeView extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: GridView.builder(
@@ -82,9 +81,9 @@ class HomeView extends StatelessWidget {
         type: BottomNavigationBarType.fixed,
         currentIndex: 0,
         onTap: (index) {
-          if (index == 0) Get.toNamed('/home');
-          if (index == 1) Get.toNamed('/promo');
-          if (index == 2) Get.toNamed('/order');
+          if (index == 0) Get.offAll('/home');
+          if (index == 1) Get.offAll('/promo');
+          if (index == 2) Get.offAll('/order');
         },
         items: const [
           BottomNavigationBarItem(

@@ -84,9 +84,9 @@ class OrdersView extends StatelessWidget {
         type: BottomNavigationBarType.fixed,
         currentIndex: 2,
         onTap: (index) {
-          if (index == 0) Get.toNamed('/home');
-          if (index == 1) Get.toNamed('/promo');
-          if (index == 2) Get.toNamed('/order');
+          if (index == 0) Get.offAll('/home');
+          if (index == 1) Get.offAll('/promo');
+          if (index == 2) Get.offAll('/order');
         },
         items: const [
           BottomNavigationBarItem(
