@@ -1,17 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../controller/onboarding_controller.dart';
 
-import '../view/onboarding_view.dart';
-
-class OnBoarding extends StatelessWidget {
-  const OnBoarding({super.key});
-
+class OnboardingBinding extends Bindings {
   @override
-  Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: 'Gojek Welcome Page',
-      theme: ThemeData(primarySwatch: Colors.green),
-      home: OnboardingView(),
-    );
+  void dependencies() {
+    Get.lazyPut<OnboardingController>(() => OnboardingController());
   }
 }

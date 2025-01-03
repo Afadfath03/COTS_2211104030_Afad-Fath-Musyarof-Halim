@@ -5,6 +5,7 @@ import '../widget/logo.dart';
 import '../widget/text.dart';
 
 class OnboardingView extends StatelessWidget {
+  OnboardingView({super.key});
   final OnboardingController controller = Get.put(OnboardingController());
 
   @override
@@ -61,7 +62,7 @@ class OnboardingView extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     onPressed: () {
-                      // Navigate to Login Page
+                      Get.toNamed('/login');
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
@@ -72,7 +73,7 @@ class OnboardingView extends StatelessWidget {
                   const SizedBox(height: 8),
                   OutlinedButton(
                     onPressed: () {
-                      Get.toNamed('/register');
+                      Get.toNamed('/login');
                     },
                     style: OutlinedButton.styleFrom(
                       side: const BorderSide(color: Colors.green),

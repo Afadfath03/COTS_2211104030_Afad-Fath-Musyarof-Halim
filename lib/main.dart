@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import 'modules/login/binding/login_binding.dart';
+import 'modules/login/view/login_view.dart';
+
+import 'modules/onboarding/view/onboarding_view.dart';
 import 'modules/onboarding/binding/onboarding_binding.dart';
 
 void main() {
@@ -11,15 +16,26 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const OnBoarding(),
-      },
+      initialRoute: '/onboarding',
+      getPages: [
+        // Onboarding Page
+        GetPage(
+          name: '/onboarding',
+          page: () => OnboardingView(),
+          binding: OnboardingBinding(),
+        ),
+        // Login Page
+        GetPage(
+          name: '/login',
+          page: () => LoginView(),
+          binding: LoginBinding(),
+        ),
+      ],
     );
   }
 }

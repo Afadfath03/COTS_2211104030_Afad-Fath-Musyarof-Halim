@@ -1,14 +1,19 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
 import 'onboarding_model.dart';
 
 class OnboardingController extends GetxController {
+  // Page Controller for PageView
+  final PageController pageController = PageController();
+
   // List of onboarding pages
   final onboardingPages = <OnboardingModel>[
     OnboardingModel(
       image: 'assets/images/onboard/onboard1.png',
       title: 'Selamat datang di gojek!',
       text:
-          'Aplikasi yang bikin hidupmu lebih nyaman. Siap bantuin semua kebutuhan mu, kapanpun, dan di manapun',
+          'Aplikasi yang bikin hidupmu lebih nyaman. Siap bantuin semua kebutuhan mu, kapanpun, dan di manapun.',
     ),
     OnboardingModel(
       image: 'assets/images/onboard/onboard2.png',
@@ -23,7 +28,7 @@ class OnboardingController extends GetxController {
     ),
   ].obs;
 
-  // Current page index
+  // Current Page Index
   var currentPage = 0.obs;
 
   void changePage(int index) {
