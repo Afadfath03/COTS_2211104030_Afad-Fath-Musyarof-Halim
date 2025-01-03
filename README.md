@@ -8,6 +8,7 @@ Live Coding PPB
 
 - home <br> ![home](screenshot/home.png)
 
-- promo ![promo](screenshot/promo.png)
+- promo <br> ![promo](screenshot/promo.png)
 
-- order ![order](screenshot/order.png)
+- order <br> ![order](screenshot/order.png)
+
