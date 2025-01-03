@@ -1,3 +1,5 @@
-# cots_2211104030_afadfathmusyarofhalim
+# COTS
+# 2211104030
+# Afad Fath Musyarof Halim
 
-A new Flutter project.
+Live Coding PPB
