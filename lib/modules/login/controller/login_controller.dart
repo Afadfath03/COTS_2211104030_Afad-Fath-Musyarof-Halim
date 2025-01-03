@@ -9,8 +9,7 @@ class LoginController extends GetxController {
 
   void handleContinue() {
     if (phoneNumber.value.isNotEmpty) {
-      // Perform login action or navigate
-      Get.snackbar('Success', 'Phone number submitted: ${phoneNumber.value}');
+      Get.toNamed('/home');
     } else {
       Get.snackbar('Error', 'Phone number is required');
     }

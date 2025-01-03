@@ -19,12 +19,18 @@ class LoginView extends StatelessWidget {
           },
         ),
         actions: [
-          TextButton(
-            onPressed: () {
-              // Handle skip button
-            },
-            child: const Text('Skip'),
-          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(right: 16.0),
+                child: Image.asset(
+                  'assets/help.png',
+                  height: 40,
+                ),
+              ),
+            ],
+          )
         ],
       ),
       body: SafeArea(
