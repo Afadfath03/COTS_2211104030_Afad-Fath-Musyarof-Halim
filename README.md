@@ -2,8 +2,12 @@
 
 Live Coding PPB
 
-![home](screenshot/home.png)
-![login](screenshot/login.png)
-![onboard](screenshot/onboard.png)
-![promo](screenshot/promo.png)
-![order](screenshot/order.png)
+- onboard <br> ![onboard](screenshot/onboard.png)
+
+- login <br> ![login](screenshot/login.png)
+
+- home <br> ![home](screenshot/home.png)
+
+- promo ![promo](screenshot/promo.png)
+
+- order ![order](screenshot/order.png)
