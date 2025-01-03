@@ -22,13 +22,10 @@ class LoginView extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(right: 16.0),
-                child: Image.asset(
-                  'assets/help.png',
-                  height: 40,
-                ),
-              ),
+              IconButton(
+                icon: const Icon(Icons.help_outline, color: Colors.black),
+                onPressed: () {},
+              )
             ],
           )
         ],
