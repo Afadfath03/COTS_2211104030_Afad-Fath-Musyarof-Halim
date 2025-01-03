@@ -23,8 +23,7 @@ class InfoCard extends StatelessWidget {
             BoxShadow(
               color: Colors.grey.shade200,
               blurRadius: 6,
-              // ignore: prefer_const_constructors
-              offset: Offset(0, 2),
+              offset: const Offset(0, 2),
             ),
           ],
         ),

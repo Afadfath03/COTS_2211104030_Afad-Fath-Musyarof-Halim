@@ -39,9 +39,7 @@ class PhoneInputField extends StatelessWidget {
         ),
         suffixIcon: IconButton(
           icon: const Icon(Icons.info_outline, color: Colors.grey),
-          onPressed: () {
-            // Handle info button
-          },
+          onPressed: () {},
         ),
       ),
     );

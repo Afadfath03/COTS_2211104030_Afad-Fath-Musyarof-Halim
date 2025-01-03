@@ -6,11 +6,11 @@ class PromoCard extends StatelessWidget {
   final String imageUrl;
 
   const PromoCard({
-    Key? key,
+    super.key,
     required this.title,
     required this.description,
     required this.imageUrl,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class PromoCard extends StatelessWidget {
           BoxShadow(
             color: Colors.grey.shade200,
             blurRadius: 6,
-            offset: Offset(0, 2),
+            offset: const Offset(0, 2),
           ),
         ],
       ),

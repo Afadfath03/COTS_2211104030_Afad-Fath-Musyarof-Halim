@@ -17,7 +17,7 @@ class HomeView extends StatelessWidget {
         title: TextField(
           decoration: InputDecoration(
             hintText: 'Find services, food, or places',
-            prefixIcon: Icon(Icons.search, color: Colors.grey),
+            prefixIcon: const Icon(Icons.search, color: Colors.grey),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(30),
               borderSide: BorderSide.none,
@@ -31,13 +31,13 @@ class HomeView extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Quick Access Features
+            
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: GridView.builder(
                 shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                physics: const NeverScrollableScrollPhysics(),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 4,
                   mainAxisSpacing: 16,
                   crossAxisSpacing: 16,

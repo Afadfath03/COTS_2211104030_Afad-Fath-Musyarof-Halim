@@ -5,10 +5,10 @@ class FeatureCard extends StatelessWidget {
   final String iconPath;
 
   const FeatureCard({
-    Key? key,
+    super.key,
     required this.title,
     required this.iconPath,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

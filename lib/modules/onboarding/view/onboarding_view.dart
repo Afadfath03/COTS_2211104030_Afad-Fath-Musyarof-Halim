@@ -14,11 +14,8 @@ class OnboardingView extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            // Logo
             OnboardWidgetLogo(),
             const Spacer(),
-
-            // PageView for Onboarding Content
             Expanded(
               flex: 8,
               child: PageView.builder(
@@ -34,8 +31,6 @@ class OnboardingView extends StatelessWidget {
                 },
               ),
             ),
-
-            // Dots Indicator
             Obx(() => Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: List.generate(
@@ -54,8 +49,6 @@ class OnboardingView extends StatelessWidget {
                   ),
                 )),
             const Spacer(),
-
-            // Buttons
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Column(
@@ -86,8 +79,6 @@ class OnboardingView extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-
-            // Footer
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(

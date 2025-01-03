@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 
 class PromoController extends GetxController {
-  // Dummy data for categories
   final List<String> categories = [
     'Apa aja',
     'GoFood',
@@ -10,10 +9,8 @@ class PromoController extends GetxController {
     'GoRide',
   ];
 
-  // Active category index
   var activeCategoryIndex = 0.obs;
 
-  // Promo data (dummy for now)
   final List<Map<String, String>> promos = [
     {
       'title': 'Jaminan Ongkir Rp 5 RB',

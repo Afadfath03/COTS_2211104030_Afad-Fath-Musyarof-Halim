@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class OnboardWidgetLogo extends StatelessWidget {
+  const OnboardWidgetLogo({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(

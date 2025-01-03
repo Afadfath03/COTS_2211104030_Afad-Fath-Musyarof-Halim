@@ -22,7 +22,6 @@ class OrdersController extends GetxController {
     },
   ];
 
-  // Set active tab
   void setActiveTab(int index) {
     activeTabIndex.value = index;
   }

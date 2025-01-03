@@ -4,10 +4,8 @@ import 'package:get/get.dart';
 import 'onboarding_model.dart';
 
 class OnboardingController extends GetxController {
-  // Page Controller for PageView
   final PageController pageController = PageController();
 
-  // List of onboarding pages
   final onboardingPages = <OnboardingModel>[
     OnboardingModel(
       image: 'assets/images/onboard/onboard1.png',
@@ -28,7 +26,6 @@ class OnboardingController extends GetxController {
     ),
   ].obs;
 
-  // Current Page Index
   var currentPage = 0.obs;
 
   void changePage(int index) {
