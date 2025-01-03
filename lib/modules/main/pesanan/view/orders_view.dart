@@ -84,9 +84,9 @@ class OrdersView extends StatelessWidget {
         type: BottomNavigationBarType.fixed,
         currentIndex: 2,
         onTap: (index) {
-          if (index == 0) Get.offAll('/home');
-          if (index == 1) Get.offAll('/promo');
-          if (index == 2) Get.offAll('/order');
+          if (index == 0) Get.offAndToNamed('/home');
+          if (index == 1) Get.offAndToNamed('/promo');
+          if (index == 2) Get.offAndToNamed('/order');
         },
         items: const [
           BottomNavigationBarItem(
@@ -100,10 +100,6 @@ class OrdersView extends StatelessWidget {
           BottomNavigationBarItem(
             icon: Icon(Icons.receipt_long_outlined),
             label: 'Orders',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.chat_bubble_outline),
-            label: 'Chat',
           ),
         ],
       ),

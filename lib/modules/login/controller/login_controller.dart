@@ -9,7 +9,7 @@ class LoginController extends GetxController {
 
   void handleContinue() {
     if (phoneNumber.value.isNotEmpty) {
-      Get.toNamed('/home');
+      Get.offAllNamed('/home');
     } else {
       Get.snackbar('Error', 'Phone number is required');
     }
